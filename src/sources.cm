@@ -1,7 +1,11 @@
 Library
+  structure Ty
+  structure Pattern
   source(-)
 is
   $/basis.cm
   $SMACKAGE/typeclasses/v1/sources.cm
 
   common.sml
+  Ty.sml
+  Pattern.sml
