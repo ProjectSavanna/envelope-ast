@@ -1,0 +1,7 @@
+Library
+  source(-)
+is
+  $/basis.cm
+  $SMACKAGE/typeclasses/v1/sources.cm
+
+  common.sml
