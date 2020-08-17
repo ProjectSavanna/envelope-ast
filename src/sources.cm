@@ -4,13 +4,18 @@ Library
   structure Match
   structure Exp
   structure Dec
+
+  structure Ast
 is
   $/basis.cm
   $SMACKAGE/typeclasses/v1/sources.cm
 
   common.sml
+
   Ty.sml
   Pattern.sml
   Match.sml
   Exp.sml
   Dec.sml
+
+  Ast.sml

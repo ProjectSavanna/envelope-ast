@@ -5,7 +5,7 @@ structure Pattern =
     | Row of Lab.t * 'pat * ('ty,'pat) patrow option
     | LabelAsVar of VId.t * 'ty Ty.t option * 'pat option * ('ty,'pat) patrow option
 
-    datatype ('ty,'atpat,'pat) atpat =
+    datatype ('ty,'pat) atpat =
       Wild
     | SCon of SCon.t
     | Var of VId.t Long.t Op.t
