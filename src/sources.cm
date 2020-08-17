@@ -1,7 +1,9 @@
 Library
   structure Ty
   structure Pattern
-  source(-)
+  structure Match
+  structure Exp
+  structure Dec
 is
   $/basis.cm
   $SMACKAGE/typeclasses/v1/sources.cm
@@ -11,3 +13,4 @@ is
   Pattern.sml
   Match.sml
   Exp.sml
+  Dec.sml
