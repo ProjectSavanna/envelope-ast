@@ -9,3 +9,5 @@ is
   common.sml
   Ty.sml
   Pattern.sml
+  Match.sml
+  Exp.sml

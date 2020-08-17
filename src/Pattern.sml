@@ -16,7 +16,7 @@ structure Pattern =
     | Paren of 'pat
 
     datatype ('ty,'atpat,'pat) pat =
-      AtPat of 'atpat
+      Atom of 'atpat
     | Constructed of VId.t Long.t Op.t * 'atpat
     | InfixConstructed of 'pat * VId.t * 'pat
     | Typed of 'pat * 'ty Ty.t
