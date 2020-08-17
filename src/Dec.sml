@@ -10,6 +10,11 @@ structure Dec =
       ExnNew of 'ty Ty.t option
     | ExnCopy of VId.t Long.t Op.t
 
+    datatype fixity =
+      Left of int option
+    | Right of int option
+    | Non
+
     datatype ('ty,'atpat,'pat,'exp,'dec) dec =
       Val of TyVar.t list * ('pat,'exp) valbind list
     | Fun of TyVar.t list * (VId.t Op.t * 'atpat list * 'ty Ty.t * 'exp) list list
@@ -21,7 +26,5 @@ structure Dec =
     | Local of 'dec * 'dec
     | Open of StrId.t Long.t list
     | Sequence of 'dec * 'dec
-    | Infix of int option * VId.t list
-    | InfixR of int option * VId.t list
-    | Nonfix of VId.t list
+    | Fixity of fixity * VId.t list
   end
